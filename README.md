@@ -72,12 +72,12 @@ Developed by <a href="https://polygant.net" target="_blank">Polygant</a>.
 
 You need to SSH into your server as root and run the following command:
 
-    mkdir /app ; 
-    cd /app/ || exit ; 
-    git clone https://github.com/Polygant/OpenCEX.git ./deploy ;
+    sudo mkdir /app ; 
+    cd /app/ ; 
+    sudo git clone https://github.com/fx-traaitt/OpenCEX.git ./deploy ;
     cd deploy ; 
-    chmod +x opencex.sh ;
-    ./opencex.sh 2>&1 | tee /tmp/install.txt
+    sudo chmod +x opencex.sh ;
+    sudo ./opencex.sh 2>&1 | tee /tmp/install.txt
 
 Installation time ~ 5 minutes.
 
